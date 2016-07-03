@@ -63,8 +63,29 @@
 				</div>
 			</section>
 			<!--/ logo -->
+
+			<!-- Main top navigation -->
+				<ul class="nav nav-pills" id="top-nav">
+				  <li role="presentation" class="main-menu"><a href="#">Home</a></li>
+				  <li role="presentation" class="main-menu dropdown">
+				  	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Items</a>
+				  	<ul class="dropdown-menu">
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 1</a></li>
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 2</a></li>
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 3</a></li>
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 4</a></li>
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 5</a></li>
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 6</a></li>
+				  		<li role="separator" class="divider"></li><li><a href="#">Item 7</a></li>
+				  	</ul>
+				  </li>
+				  <li role="presentation" class="main-menu"><a href="#">Our Partners</a></li>
+				  <li role="presentation" class="main-menu"><a href="#">About Us</a></li>
+				  <li role="presentation" class="main-menu"><a href="#">Videos</a></li>
+				</ul>
+			<!-- End main top navigation -->
 		</header>
-		<!-- End page header -->
+		<!-- End page header -->				
 
 		<!-- Page middle wrapper -->
 		<div class="wrapper middle-wrapper">

@@ -1,4 +1,7 @@
 $(document).ready(function (){
+	/**
+	 * Slider
+	 */
 	$("#slider").layerSlider({
 			width : '100%', 
 			height : '407px',
@@ -52,5 +55,17 @@ $(document).ready(function (){
 			delayIn					: 0,
 			delayOut				: 0
   });
+
+  /**
+   * Top navigation
+   */
+  $('#top-nav .dropdown').hover(
+  	function(){
+	  	$(this).addClass('open');
+	  },
+	  function() {
+	    $( this ).removeClass('open');
+	  }
+  );
 });
 //# sourceMappingURL=all.js.map
