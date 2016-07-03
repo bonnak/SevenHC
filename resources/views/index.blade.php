@@ -11,6 +11,7 @@
 		
 		<!-- styles -->
 		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/layerslider.css') }}">
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
 		<!--/ styles -->
 		
@@ -18,6 +19,7 @@
 </head>
 <body class="en">
 	<div class="container-fluid">
+		<!-- Page header -->
 		<header class="wrapper page-header main-page">
 			<section class="section-1 clearfix">
 				<a href="#" class="language-icon"><img src="{{ asset('assets/images/languages/english.png') }}"></a>
@@ -62,10 +64,124 @@
 			</section>
 			<!--/ logo -->
 		</header>
-		<!--/ page header -->
+		<!-- End page header -->
+
+		<!-- Page middle wrapper -->
+		<div class="wrapper middle-wrapper">
+			<!-- slider -->
+			<div class="slider-wrapper">
+				<section class="slider" id="slider">
+					<div class="ls-slide" data-ls="transition2d:9;slidedelay:7000;">					
+						<img src="{{ asset('assets/images/slides/Implants-1x1150.jpg') }}" alt="" class="ls-bg">
+						
+						<div class="intro ls-l" data-ls="offsetyin:top;offsetxin:0;durationin:2000;offsetyout:bottom;offsetxout:0;durationout:1000;" style="left:80%;top:35%;">
+							<span class="icon fa fa-heart"></span>
+							<h2><span>SYMPTOM</span>CHECKER</h2>
+							<p>Vestibulum rutrum luctus porta. Maecenas elit nibh</p>
+							<div class="buttons">
+								<a href="#" class="prev"><i class="fa fa-angle-left"></i></a><!--
+								--><a href="#" class="button">Read More</a><!--
+								--><a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="ls-slide" data-ls="transition2d:40;slidedelay:7000;">				
+						<img src="{{ asset('assets/images/slides/Implants-2x1150.jpg') }}" alt="" class="ls-bg">
+						
+						<div class="intro ls-l" data-ls="scalexin:0.3;scaleyin:0.3;rotatexin:180;offsetxin:0;durationin:2000;durationout:2000;scalexout:2;scaleyout:2;offsetxout:0;fadeout:true;showuntil:3000;" style="left:80%;top:35%;">
+							<span class="icon fa fa-comments"></span>
+							<h2><span>HELP</span>ONLINE</h2>
+							<p>Vestibulum rutrum luctus porta. Maecenas elit nibh</p>
+							<div class="buttons">
+								<a href="#" class="prev"><i class="fa fa-angle-left"></i></a><!--
+								--><a href="#" class="button">Read More</a><!--
+								--><a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="ls-slide" data-ls="transition2d:11;slidedelay:7000;">
+						<img src="{{ asset('assets/images/slides/Implants-1x1150.jpg') }}" alt="" class="ls-bg">
+						
+						<div class="intro ls-l" data-ls="skewxin:30;skewyin:0;offsetxin:right;fadein:false;durationin:2000;durationout:1000;offsetxout:right;offsetyout:0;fadeout:true;" style="left:80%;top:35%;">
+							<span class="icon fa fa-flask"></span>
+							<h2><span>LAB</span>TESTING</h2>
+							<p>Vestibulum rutrum luctus porta. Maecenas elit nibh</p>
+							<div class="buttons">
+								<a href="#" class="prev"><i class="fa fa-angle-left"></i></a><!--
+								--><a href="#" class="button">Read More</a><!--
+								--><a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--/ slider -->
+		</div>
+		<!-- End page middle wrapper -->
+
+		<!-- Page footer -->
+		<!-- End page footer -->
 	</div>
 	<!-- scripts -->
 	<script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/greensock.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/layerslider.transitions.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
+	<script type="text/javascript">
+		$("#slider").layerSlider({
+				width : '100%', 
+				height : '407px',
+				autoStart : true,
+				responsive : true,
+				responsiveUnder : 0,
+				sublayerContainer : 0,
+				firstLayer : 1,
+				twoWaySlideshow : false,
+				randomSlideshow : false,
+				keybNav : true,
+				touchNav : true,
+				imgPreload : true,
+				navPrevNext : false,
+				navStartStop : false,
+				navButtons : false,
+				thumbnailNavigation : 'none',
+				tnWidth : 100,
+				tnHeight : 60,
+				tnContainerWidth : '60%',
+				tnActiveOpacity : 35,
+				tnInactiveOpacity : 100,
+				hoverPrevNext : true,
+				hoverBottomNav : false,
+				skin					: 'fullwidth',
+				skinsPath				: '/assets/css/',
+				pauseOnHover			: true,
+				globalBGColor			: 'transparent',
+				globalBGImage			: false,
+				animateFirstLayer		: false,
+				yourLogo				: false,
+				yourLogoStyle			: 'position: absolute; z-index: 1001; left: 10px; top: 10px;',
+				yourLogoLink			: false,
+				yourLogoTarget			: '_blank',
+				loops					: 0,
+				forceLoopNum			: true,
+				autoPlayVideos			: true,
+				autoPauseSlideshow		: 'auto',
+				youtubePreview			: 'maxresdefault.jpg',
+				showBarTimer		: false,
+				showCircleTimer		: false,
+
+				// you can change this settings separately by layers or sublayers with using html style attribute
+
+				slideDirection			: 'right',
+				slideDelay				: 4000,
+				durationIn				: 1000,
+				durationOut				: 1000,
+				easingIn				: 'easeInOutQuint',
+				easingOut				: 'easeInOutQuint',
+				delayIn					: 0,
+				delayOut				: 0
+	  });
+	</script>
 	<!-- end scripts -->
 </body>
 </html>
