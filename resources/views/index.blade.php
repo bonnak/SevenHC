@@ -127,61 +127,8 @@
 	<script type="text/javascript" src="{{ asset('assets/js/greensock.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/layerslider.transitions.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
-	<script type="text/javascript">
-		$("#slider").layerSlider({
-				width : '100%', 
-				height : '407px',
-				autoStart : true,
-				responsive : true,
-				responsiveUnder : 0,
-				sublayerContainer : 0,
-				firstLayer : 1,
-				twoWaySlideshow : false,
-				randomSlideshow : false,
-				keybNav : true,
-				touchNav : true,
-				imgPreload : true,
-				navPrevNext : false,
-				navStartStop : false,
-				navButtons : false,
-				thumbnailNavigation : 'none',
-				tnWidth : 100,
-				tnHeight : 60,
-				tnContainerWidth : '60%',
-				tnActiveOpacity : 35,
-				tnInactiveOpacity : 100,
-				hoverPrevNext : true,
-				hoverBottomNav : false,
-				skin					: 'fullwidth',
-				skinsPath				: '/assets/css/',
-				pauseOnHover			: true,
-				globalBGColor			: 'transparent',
-				globalBGImage			: false,
-				animateFirstLayer		: false,
-				yourLogo				: false,
-				yourLogoStyle			: 'position: absolute; z-index: 1001; left: 10px; top: 10px;',
-				yourLogoLink			: false,
-				yourLogoTarget			: '_blank',
-				loops					: 0,
-				forceLoopNum			: true,
-				autoPlayVideos			: true,
-				autoPauseSlideshow		: 'auto',
-				youtubePreview			: 'maxresdefault.jpg',
-				showBarTimer		: false,
-				showCircleTimer		: false,
+	<script type="text/javascript" src="{{ asset('js/all.js') }}"></script>
 
-				// you can change this settings separately by layers or sublayers with using html style attribute
-
-				slideDirection			: 'right',
-				slideDelay				: 4000,
-				durationIn				: 1000,
-				durationOut				: 1000,
-				easingIn				: 'easeInOutQuint',
-				easingOut				: 'easeInOutQuint',
-				delayIn					: 0,
-				delayOut				: 0
-	  });
-	</script>
 	<!-- end scripts -->
 </body>
 </html>
