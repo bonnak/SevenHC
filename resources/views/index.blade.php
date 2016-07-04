@@ -65,7 +65,7 @@
 			<!--/ logo -->
 
 			<!-- Main top navigation -->
-				<ul class="nav nav-pills" id="top-nav">
+			<!--	<ul class="nav nav-pills" id="top-nav">
 				  <li role="presentation" class="main-menu"><a href="#">Home</a></li>
 				  <li role="presentation" class="main-menu dropdown">
 				  	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Items</a>
@@ -82,7 +82,45 @@
 				  <li role="presentation" class="main-menu"><a href="#">Our Partners</a></li>
 				  <li role="presentation" class="main-menu"><a href="#">About Us</a></li>
 				  <li role="presentation" class="main-menu"><a href="#">Videos</a></li>
-				</ul>
+				</ul> -->
+
+				<div class="navbar navbar-default" id="top-nav">
+					<div class="container-fluid">
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="main-menu"><a href="#">Home</a></li>
+								<li class="main-menu dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Items</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Items 1</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 2</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 3</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 4</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 5</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 6</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 7</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 8</a></li>
+									</ul>
+								</li>
+								<li class="main-menu dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Partners</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Partner 1</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 2</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 3</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 4</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 5</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 6</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 7</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 8</a></li>
+									</ul>
+								</li>
+								<li class="main-menu"><a href="#">About Us</a></li>
+								<li class="main-menu"><a href="#">Videos</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			<!-- End main top navigation -->
 		</header>
 		<!-- End page header -->				

@@ -6,42 +6,30 @@
 	z-index: 99
 	left: (1150px - 572px) / 2
 	top: 110px
-	padding-left: 23px
-	
-	li.main-menu
-		border-left: solid 3px rgba(255, 255, 255, 0.7)
-		transform: skewX(-30deg)
-		
-		&:last-child
-			border-right: solid 3px #fff
+	margin: 0
+	border-radius: 0
+	border:none !important
 
-		&:hover
-			background-color: rgba(139, 140, 142, 0.4)
+	li.main-menu
+		border-left: solid 2px rgba(255, 255, 255, 0.7)
+		transform: skewX(-30deg)
+
+		&:last-child
+			border-right: solid 2px #fff
 
 		a
 			color: #000
 			font-size: 1.4em
-			transform: skewX(30deg)
 			background: none
 
-		.dropdown-menu
-			margin-top: 0
-			border-radius: 0
-			box-shadow: none
-			border: none
-			background-color: rgba(139, 140, 142, 0.3)
-			left: 13px
+		> a			
 			transform: skewX(30deg)
-			padding-top: 0
-			padding-bottom: 0
 
-			li
-				padding: 5px 0 5px 3px
+		ul.dropdown-menu
+			background-color: rgba(139, 140, 142, 0.3)
+			transform: skewX(30deg)
+			transform-origin: top left
 
-				&.divider
-					margin: 0
-					padding: 0
-					background-color: rgba(255, 255, 255, 0.7)					
-
-				a
-					transform: skewX(0deg)
+		&.open
+			a, a:hover
+				background: none
