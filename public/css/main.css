@@ -5956,5 +5956,13 @@ header {
       transform-origin: top left; }
     #top-nav li.main-menu.open a, #top-nav li.main-menu.open a:hover {
       background: none; }
+    #top-nav li.main-menu.open ul {
+      height: 200px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 /*# sourceMappingURL=main.css.map */

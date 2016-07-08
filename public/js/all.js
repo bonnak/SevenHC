@@ -59,9 +59,31 @@ $(document).ready(function (){
   /**
    * Top navigation
    */
+  var dropdown_menu = $('#top-nav .dropdown').children('.dropdown-menu');
+  
+  $(dropdown_menu).each(function(index, el){
+  	$(el).children('li').each(function(index, el){
+  		console.log($(el).width(), $(el).height());
+  	});
+  });
+
   $('#top-nav .dropdown').hover(
-  	function(){
-	  	$(this).addClass('open');
+  	function(){  	
+  		$(this).addClass('open');
+
+	  	var dropdown_menu = $(this).children('.dropdown-menu')[0];
+	  	var li = $(dropdown_menu).children('li');
+	  	var max_row = 10;
+	  	var num_col = $(li).length > max_row ? Math.ceil($(li).length / max_row) : 1;
+	  	var num_row = $(li).length <= max_row ? $(li).length : max_row;
+	  	var d_width = $(li).outerWidth() * num_col;
+	  	var d_height = $(li).outerHeight() * num_row;
+
+	  	console.log($(li), num_row, num_col);
+
+	  	$(dropdown_menu).width(d_width);
+	  	$(dropdown_menu).height(d_height + 5);
+	  	
 	  },
 	  function() {
 	    $( this ).removeClass('open');

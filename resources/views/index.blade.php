@@ -92,27 +92,43 @@
 								<li class="main-menu dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Items</a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Items 1</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Items 2</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Items 3</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Items 4</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Items 5</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Items 6</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Items 7</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Items 1</a></li>
+										<li><a href="#">Items 2</a></li>
+										<li><a href="#">Items 3</a></li>
+										<li><a href="#">Items 4</a></li>
+										<li><a href="#">Items 5</a></li>
+										<li><a href="#">Items 6</a></li>
+										<li><a href="#">Items 7</a></li>
 										<li><a href="#">Items 8</a></li>
 									</ul>
 								</li>
 								<li class="main-menu dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Partners</a>
 									<ul class="dropdown-menu">
-										<li><a href="#">Partner 1</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Partner 2</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Partner 3</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Partner 4</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Partner 5</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Partner 6</a></li><li role="separator" class="divider"></li>
-										<li><a href="#">Partner 7</a></li><li role="separator" class="divider"></li>
+										<li><a href="#">Partner 1</a></li>
+										<li><a href="#">Partner 2</a></li>
+										<li><a href="#">Partner 3</a></li>
+										<li><a href="#">Partner 4</a></li>
+										<li><a href="#">Partner 5</a></li>
+										<li><a href="#">Partner 6</a></li>
+										<li><a href="#">Partner 7</a></li>
 										<li><a href="#">Partner 8</a></li>
+										<li><a href="#">Partner 9</a></li>
+										<li><a href="#">Partner 10</a></li>
+										<li><a href="#">Partner 11</a></li>
+										<li><a href="#">Partner 12</a></li>
+										<li><a href="#">Partner 1</a></li>
+										<li><a href="#">Partner 2</a></li>
+										<li><a href="#">Partner 3</a></li>
+										<li><a href="#">Partner 4</a></li>
+										<li><a href="#">Partner 5</a></li>
+										<li><a href="#">Partner 6</a></li>
+										<li><a href="#">Partner 7</a></li>
+										<li><a href="#">Partner 8</a></li>
+										<li><a href="#">Partner 9</a></li>
+										<li><a href="#">Partner 10</a></li>
+										<li><a href="#">Partner 11</a></li>
+										<li><a href="#">Partner 12</a></li>
 									</ul>
 								</li>
 								<li class="main-menu"><a href="#">About Us</a></li>
