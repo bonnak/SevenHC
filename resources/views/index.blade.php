@@ -141,8 +141,8 @@
 		</header>
 		<!-- End page header -->				
 
-		<!-- Page middle wrapper -->
-		<div class="wrapper middle-wrapper">
+		
+		<div class="wrapper">
 			<!-- slider -->
 			<div class="slider-wrapper">
 				<section class="slider" id="slider">
@@ -191,8 +191,93 @@
 				</section>
 			</div>
 			<!--/ slider -->
+			
+			<!-- Selected products -->
+			<div class="panel panel-default items-section">
+				<div class="panel-heading heading">Selected Products</div>
+				<div class="panel-body items">
+					<div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+				</div>
+			</div>
+			<!-- End selected products -->
+
+			<!-- Referal from doctors -->
+			<div class="panel panel-default items-section">
+				<div class="panel-heading heading">Referal from Doctors</div>
+				<div class="panel-body items">
+					<div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id magnam saepe quisquam minima facilis eaque, eligendi temporibus quae vero, natus pariatur, accusamus cupiditate est culpa sequi repellendus excepturi soluta.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id magnam saepe quisquam minima facilis eaque, eligendi temporibus quae vero, natus pariatur, accusamus cupiditate est culpa sequi repellendus excepturi soluta.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+
+			    <div class="item-content clearfix">
+			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id magnam saepe quisquam minima facilis eaque, eligendi temporibus quae vero, natus pariatur, accusamus cupiditate est culpa sequi repellendus excepturi soluta.</p>
+			      <div class="more">
+			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
+			      </div>
+			    </div>
+				</div>
+			</div>
+			<!-- End referal from doctors -->
 		</div>
-		<!-- End page middle wrapper -->
 
 		<!-- Page footer -->
 		<!-- End page footer -->
