@@ -5974,7 +5974,8 @@ header {
     border-left: solid 5px #009a99;
     border-radius: 0;
     font-size: 1.5em;
-    padding: 0 0 0 10px; }
+    padding: 0 0 0 10px;
+    background: none; }
   .items-section .items .item-content {
     width: 340px;
     margin: 15px 28px 15px 0;

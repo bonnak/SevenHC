@@ -277,6 +277,46 @@
 				</div>
 			</div>
 			<!-- End referal from doctors -->
+
+			<!-- New arrival products in stock -->
+			<div class="panel panel-default items-section">
+				<div class="panel-heading heading">New Arrival Products in Stock</div>
+				<div class="panel-body">
+					<div>
+				  	<ul class="pager" style="z-index: 99">
+					    <li><a href="#" class="btn-previous"><i class="fa fa-chevron-left"></i></a></li>
+					    <li><a href="#" class="btn-next"><i class="fa fa-chevron-right"></i></a></li>
+					  </ul>
+				  </div>
+					<!-- Nav tabs -->
+				  <ul class="nav nav-pills clearfix" id="filters">
+       			<li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+       			<li><a href="#" class="opc-main-bg" data-filter=".web">Web Hosting</a></li>
+       			<li><a href="#" class="opc-main-bg" data-filter=".design">Web Desing</a></li>
+        		<li><a href="#" class="opc-main-bg" data-filter=".application">Web Application</a></li>
+        		<li><a href="#" class="opc-main-bg" data-filter=".camera">Camera Security</a></li>
+						<li><a href="#" class="opc-main-bg" data-filter=".network">NETWORK SOLUTION</a></li>
+            <li><a href="#" class="opc-main-bg" data-filter=".computer">COMPUTER SOLUTION</a></li>
+       		</ul>
+
+				  <!-- Tab panes -->
+				  <div class="isotope grid">
+					  <div class="element-item web"><img src="{{ asset('assets/images/isotope/portfolio-1.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web"><img src="{{ asset('assets/images/isotope/portfolio-2.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item application"><img src="{{ asset('assets/images/isotope/portfolio-3.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item camera"><img src="{{ asset('assets/images/isotope/portfolio-4.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item network camera"><img src="{{ asset('assets/images/isotope/portfolio-5.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-6.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-7.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-8.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-9.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-10.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-11.jpg') }}" alt="portfolio img" width="200"></div>
+				  </div>
+				  				  
+				</div>
+			</div>
+			<!-- End new arrival products in stock -->
 		</div>
 
 		<!-- Page footer -->
@@ -284,11 +324,44 @@
 	</div>
 	<!-- scripts -->
 	<script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/greensock.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/layerslider.transitions.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/isotope.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/all.js') }}"></script>
+	
+	<script type="text/javascript">
+		var isoOptions = {
+		  itemSelector: '.element-item',
+		  layoutMode: 'fitRows'
+		};
+		
+		var $grid = $('.grid').isotope( isoOptions );
+		var isActive = true;
 
+		// bind filter button click
+		$('#filters li a').on( 'click', function(e) {
+			e.preventDefault();
+		  var filterValue = $( this ).attr('data-filter');
+		  $grid.isotope({ filter: filterValue });
+		});
+
+		$('.btn-previous').on( 'click', function(e) {
+			e.preventDefault();		
+			// var elements = $('.my-hide');
+			// $grid.isotope( 'hide', [ elements ] ).isotope( 'layout' );
+		});
+
+		$('.btn-next').on( 'click', function(e) {
+			e.preventDefault();
+			// var elements = $grid.isotope( 'getItems', $('.my-hide'));
+		 //  $grid.isotope( 'reveal', elements ).isotope( 'layout' );
+		 	
+		 	$('.element-item').toggleClass('hide');
+		 	$grid.isotope();
+		});
+	</script>
 	<!-- end scripts -->
 </body>
 </html>
