@@ -63,7 +63,7 @@ $(document).ready(function (){
   
   $(dropdown_menu).each(function(index, el){
   	$(el).children('li').each(function(index, el){
-  		console.log($(el).width(), $(el).height());
+  		//console.log($(el).width(), $(el).height());
   	});
   });
 
@@ -78,8 +78,6 @@ $(document).ready(function (){
 	  	var num_row = $(li).length <= max_row ? $(li).length : max_row;
 	  	var d_width = $(li).outerWidth() * num_col;
 	  	var d_height = $(li).outerHeight() * num_row;
-
-	  	console.log($(li), num_row, num_col);
 
 	  	$(dropdown_menu).width(d_width);
 	  	$(dropdown_menu).height(d_height + 5);

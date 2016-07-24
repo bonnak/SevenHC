@@ -65,25 +65,6 @@
 			<!--/ logo -->
 
 			<!-- Main top navigation -->
-			<!--	<ul class="nav nav-pills" id="top-nav">
-				  <li role="presentation" class="main-menu"><a href="#">Home</a></li>
-				  <li role="presentation" class="main-menu dropdown">
-				  	<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Items</a>
-				  	<ul class="dropdown-menu">
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 1</a></li>
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 2</a></li>
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 3</a></li>
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 4</a></li>
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 5</a></li>
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 6</a></li>
-				  		<li role="separator" class="divider"></li><li><a href="#">Item 7</a></li>
-				  	</ul>
-				  </li>
-				  <li role="presentation" class="main-menu"><a href="#">Our Partners</a></li>
-				  <li role="presentation" class="main-menu"><a href="#">About Us</a></li>
-				  <li role="presentation" class="main-menu"><a href="#">Videos</a></li>
-				</ul> -->
-
 				<div class="navbar navbar-default" id="top-nav">
 					<div class="container-fluid">
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -281,16 +262,10 @@
 			<!-- New arrival products in stock -->
 			<div class="panel panel-default items-section">
 				<div class="panel-heading heading">New Arrival Products in Stock</div>
-				<div class="panel-body">
-					<div>
-				  	<ul class="pager" style="z-index: 99">
-					    <li><a href="#" class="btn-previous"><i class="fa fa-chevron-left"></i></a></li>
-					    <li><a href="#" class="btn-next"><i class="fa fa-chevron-right"></i></a></li>
-					  </ul>
-				  </div>
+				<div class="panel-body esg-panel">					
 					<!-- Nav tabs -->
-				  <ul class="nav nav-pills clearfix" id="filters">
-       			<li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+				  <ul class="nav nav-pills esg-filter clearfix" id="filters">
+       			<li class="active"><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
        			<li><a href="#" class="opc-main-bg" data-filter=".web">Web Hosting</a></li>
        			<li><a href="#" class="opc-main-bg" data-filter=".design">Web Desing</a></li>
         		<li><a href="#" class="opc-main-bg" data-filter=".application">Web Application</a></li>
@@ -300,20 +275,25 @@
        		</ul>
 
 				  <!-- Tab panes -->
-				  <div class="isotope grid">
-					  <div class="element-item web"><img src="{{ asset('assets/images/isotope/portfolio-1.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web"><img src="{{ asset('assets/images/isotope/portfolio-2.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item application"><img src="{{ asset('assets/images/isotope/portfolio-3.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item camera"><img src="{{ asset('assets/images/isotope/portfolio-4.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item network camera"><img src="{{ asset('assets/images/isotope/portfolio-5.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-6.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-7.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-8.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-9.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-10.jpg') }}" alt="portfolio img" width="200"></div>
-					  <div class="element-item design web network hide"><img src="{{ asset('assets/images/isotope/portfolio-11.jpg') }}" alt="portfolio img" width="200"></div>
+				  <div class="isotope grid esg-iso">
+					  <div class="element-item web visible"><img src="{{ asset('assets/images/isotope/portfolio-1.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web visible"><img src="{{ asset('assets/images/isotope/portfolio-2.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item application visible"><img src="{{ asset('assets/images/isotope/portfolio-3.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item camera visible"><img src="{{ asset('assets/images/isotope/portfolio-4.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item network camera visible"><img src="{{ asset('assets/images/isotope/portfolio-5.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network"><img src="{{ asset('assets/images/isotope/portfolio-6.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network"><img src="{{ asset('assets/images/isotope/portfolio-7.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network"><img src="{{ asset('assets/images/isotope/portfolio-8.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network"><img src="{{ asset('assets/images/isotope/portfolio-9.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network"><img src="{{ asset('assets/images/isotope/portfolio-10.jpg') }}" alt="portfolio img" width="200"></div>
+					  <div class="element-item design web network"><img src="{{ asset('assets/images/isotope/portfolio-11.jpg') }}" alt="portfolio img" width="200"></div>
 				  </div>
-				  				  
+				  <div class="esg-paging">
+				  	<ul class="pager">
+					    <li><a href="#" class="btn-previous"><i class="fa fa-chevron-left"></i></a></li>
+					    <li><a href="#" class="btn-next"><i class="fa fa-chevron-right"></i></a></li>
+					  </ul>
+				  </div>		  
 				</div>
 			</div>
 			<!-- End new arrival products in stock -->
@@ -329,37 +309,96 @@
 	<script type="text/javascript" src="{{ asset('assets/js/layerslider.transitions.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/js/isotope.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/js/horizontal.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/all.js') }}"></script>
 	
-	<script type="text/javascript">
-		var isoOptions = {
+	<script type="text/javascript">		
+		var $grid = $('.grid').isotope({
 		  itemSelector: '.element-item',
-		  layoutMode: 'fitRows'
+		  layoutMode: 'horiz',
+		  hiddenStyle: {
+			  opacity: 0
+			},
+			visibleStyle: {
+			  opacity: 1
+			},
+		  filter: '.visible'
+		});
+
+		fn_pagination = function(items_per_page, total){
+
+			current_page = 1;
+			items_per_page = items_per_page;
+			total = total;	
+			
+			getTotalPages = function(){
+				return Math.ceil(total / items_per_page);
+			}
+
+			next = function(){
+				return current_page >= totalPages ? totalPages : ++current_page;
+			}
+
+			previous = function(){
+				return current_page <= 1 ? 1 : --current_page;
+			}
+
+			getTo = function(){
+				var to = current_page * items_per_page
+				return to > total ? total : to;
+			}
+
+			getFrom = function(){
+				return (current_page * items_per_page) - items_per_page + 1;
+			}
+
+			var totalPages = getTotalPages();
+
+			return {
+				next: next,
+				previous: previous,
+				from: getFrom,
+				to: getTo
+			};
 		};
-		
-		var $grid = $('.grid').isotope( isoOptions );
-		var isActive = true;
+
+		var p = new fn_pagination(5, 11);
 
 		// bind filter button click
 		$('#filters li a').on( 'click', function(e) {
 			e.preventDefault();
 		  var filterValue = $( this ).attr('data-filter');
-		  $grid.isotope({ filter: filterValue });
+		  $grid.isotope({ filter: filterValue + '.visible' });
 		});
 
 		$('.btn-previous').on( 'click', function(e) {
 			e.preventDefault();		
-			// var elements = $('.my-hide');
-			// $grid.isotope( 'hide', [ elements ] ).isotope( 'layout' );
+			$('.element-item').each(function(i, el){
+				$(this).removeClass('visible');
+			});
+
+			p.previous();
+
+			for(var i=p.from()-1; i<p.to(); i++){
+				$('.element-item').eq(i).addClass('visible');
+			}
+			
+			$grid.isotope({ filter: '.visible' });
 		});
 
 		$('.btn-next').on( 'click', function(e) {
 			e.preventDefault();
-			// var elements = $grid.isotope( 'getItems', $('.my-hide'));
-		 //  $grid.isotope( 'reveal', elements ).isotope( 'layout' );
-		 	
-		 	$('.element-item').toggleClass('hide');
-		 	$grid.isotope();
+			$('.element-item').each(function(i, el){
+				$(this).removeClass('visible');
+			});
+
+			p.next();
+
+			for(var i=p.from()-1; i<p.to(); i++){
+				$('.element-item').eq(i).addClass('visible');
+			}
+
+			$grid.isotope({ filter: '.visible' });
 		});
 	</script>
 	<!-- end scripts -->
