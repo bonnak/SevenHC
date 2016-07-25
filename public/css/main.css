@@ -5819,7 +5819,8 @@ header {
 
 #top-nav {
   width: 572px;
-  background-color: rgba(139, 140, 142, 0.3);
+  background: #ffffff linear-gradient(to top, #ffffff, #efefef);
+  box-shadow: 0 0 4px rgba(157, 157, 157, 0.2), 0 3px 20px rgba(157, 157, 157, 0.35);
   margin: 0 auto;
   position: absolute;
   z-index: 99;
@@ -5835,14 +5836,19 @@ header {
       border-right: solid 2px #fff; }
     #top-nav li.main-menu a {
       color: #000;
-      font-size: 1.4em;
       background: none; }
     #top-nav li.main-menu > a {
+      font-size: 1.4em;
       transform: skewX(30deg); }
     #top-nav li.main-menu ul.dropdown-menu {
-      background-color: rgba(139, 140, 142, 0.3);
+      background-color: #fff;
+      border: solid 1px #ddd;
+      border-radius: 0;
+      box-shadow: none;
       transform: skewX(30deg);
       transform-origin: top left; }
+      #top-nav li.main-menu ul.dropdown-menu a {
+        font-size: 15px; }
     #top-nav li.main-menu.open a, #top-nav li.main-menu.open a:hover {
       background: none; }
     #top-nav li.main-menu.open ul {
