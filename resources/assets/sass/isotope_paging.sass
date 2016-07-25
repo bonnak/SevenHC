@@ -3,23 +3,35 @@
 	margin-left: -7px
 	margin-right: -7px
 	margin-top: 27px
+	padding-top: 0
 	
 	.esg-filter
 		background-color: #333
-		padding-left: 13px
+		padding-left: 18px
 
 		li
 			margin: 0
 			transform: skewX(-30deg)
-			border-left: solid 1px rgba(255, 255, 255, 0.2)
+			border-left: solid 1px rgba(69, 69, 69, 1)
+
+			&:last-child
+				border-right: solid 1px rgba(69, 69, 69, 1)
+
+			&:hover
+				background-color: #454545
 
 			&.active
 				background-color: #454545
 				border: none
 
+				a
+					background: none
+
 			a
 				background: none
 				transform: skewX(30deg)
+				text-transform: uppercase
+				padding: 20px 23px
 
 				&:hover
 					background: none
@@ -28,9 +40,32 @@
 			color: #fff
 
 	.esg-iso
-		margin-top: 15px
+		margin-top: 30px
 		margin-top: 15px
 		height: 133px
 
+		.element-item		
+			&.visible
+				margin-right: 20px
+
+				&:nth-child(5n)
+					margin-right: 0
+
+			img
+				width: 208px
+
 	.esg-paging
-		margin: 15px 0 0 0
+		margin: 20px 0 0 0
+
+		ul.pager
+			margin: 0
+
+			li
+				a
+					background: none
+					border: none
+					color: #fff
+					font-size: 16px
+
+					&:hover
+						text-shadow: 0px 1px 1px rgba(51, 51, 51, 0.7), -1px 0px 1px rgba(51, 51, 51, 0.7)

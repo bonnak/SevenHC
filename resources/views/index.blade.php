@@ -264,7 +264,7 @@
 				<div class="panel-heading heading">New Arrival Products in Stock</div>
 				<div class="panel-body esg-panel">					
 					<!-- Nav tabs -->
-				  <ul class="nav nav-pills esg-filter clearfix" id="filters">
+				  <ul class="nav nav-pills esg-filter clearfix" id="iso-filters">
        			<li class="active"><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
        			<li><a href="#" class="opc-main-bg" data-filter=".web">Web Hosting</a></li>
        			<li><a href="#" class="opc-main-bg" data-filter=".design">Web Desing</a></li>
@@ -365,8 +365,14 @@
 		var p = new fn_pagination(5, 11);
 
 		// bind filter button click
-		$('#filters li a').on( 'click', function(e) {
+		$('#iso-filters li a').on( 'click', function(e) {
 			e.preventDefault();
+
+			// Add active class.
+			$(this).parent('li').siblings().removeClass('active');
+			$(this).parent('li').addClass('active');
+			
+			// Arrange isotope elements.
 		  var filterValue = $( this ).attr('data-filter');
 		  $grid.isotope({ filter: filterValue + '.visible' });
 		});
