@@ -297,6 +297,29 @@
 				</div>
 			</div>
 			<!-- End new arrival products in stock -->
+
+			<!-- Contact, Map ... -->
+			<div class="section-7">
+				<div class="box" id="mailing-sub">
+					<h3>Register for new arrival products</h3>
+					<form>
+					  <div class="form-group">
+					    <label for="email">Email address</label>
+					    <input type="email" class="form-control" id="email">
+					  </div>
+					  <div class="form-group">
+					    <label for="name">First name</label>
+					    <input type="text" class="form-control" id="name">
+					  </div>
+					  <div class="form-group">
+						  <button type="submit" class="form-control btn">Subscribe</button>
+					  </div>
+					</form>
+				</div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+			<!-- End Contact, Map ... -->
 		</div>
 
 		<!-- Page footer -->
