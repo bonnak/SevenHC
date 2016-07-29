@@ -316,7 +316,47 @@
 					  </div>
 					</form>
 				</div>
-				<div class="box"></div>
+				
+				<div class="box" id="map"></div>
+		    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAGTfDq5N1x5KwQWyyhfD-6Ct4cyLNcuo"></script>
+		    <script>
+		      // In the following example, markers appear when the user clicks on the map.
+		      // Each marker is labeled with a single alphabetical character.
+		      var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		      var labelIndex = 0;
+
+		      function initialize() {
+		        var bangalore = { lat: 11.547918, lng: 104.868550 };
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 16,
+		          center: bangalore,
+		           mapTypeControl: false,
+		           streetViewControl: false
+		        });
+
+		        // This event listener calls addMarker() when the map is clicked.
+		        google.maps.event.addListener(map, 'click', function(event) {
+		          addMarker(event.latLng, map);
+		        });
+
+		        // Add a marker at the center of the map.
+		        addMarker(bangalore, map);
+		      }
+
+		      // Adds a marker to the map.
+		      function addMarker(location, map) {
+		        // Add the marker at the clicked location, and add the next-available label
+		        // from the array of alphabetical characters.
+		        var marker = new google.maps.Marker({
+		          position: location,
+		          label: labels[labelIndex++ % labels.length],
+		          map: map
+		        });
+		      }
+
+		      google.maps.event.addDomListener(window, 'load', initialize);
+		    </script>
+
 				<div class="box"></div>
 			</div>
 			<!-- End Contact, Map ... -->

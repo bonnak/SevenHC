@@ -6059,7 +6059,7 @@ header {
   justify-content: space-between; }
   .section-7 .box {
     background-color: red;
-    width: 200px; }
+    width: 366px; }
   .section-7 #mailing-sub {
     background: none;
     padding: 6px;
@@ -6069,16 +6069,17 @@ header {
       font-weight: 800;
       text-transform: uppercase;
       font-size: 19px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      letter-spacing: -1px; }
     .section-7 #mailing-sub label {
       font-weight: 100; }
-    .section-7 #mailing-sub input {
-      height: 38px; }
     .section-7 #mailing-sub .btn {
       background-color: #f7c51e;
       border: none;
       font-size: 17px;
-      text-transform: uppercase;
-      height: 43px; }
+      height: 40px;
+      outline: none; }
+  .section-7 #map {
+    border: solid 1px #ddd; }
 
 /*# sourceMappingURL=main.css.map */
