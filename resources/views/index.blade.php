@@ -18,6 +18,15 @@
 		<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 </head>
 <body class="en">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="container-fluid">
 		<!-- Page header -->
 		<header class="wrapper page-header main-page">
@@ -357,7 +366,17 @@
 		      google.maps.event.addDomListener(window, 'load', initialize);
 		    </script>
 
-				<div class="box"></div>
+				<div class="fb-page box" 
+							data-href="https://www.facebook.com/24sevenhealthcare/" 
+							data-tabs="timeline"
+							data-width="366"
+							data-small-header="true" 
+							data-adapt-container-width="true" 
+							data-hide-cover="false" data-show-facepile="true">
+							<blockquote cite="https://www.facebook.com/24sevenhealthcare/" class="fb-xfbml-parse-ignore">
+								<a href="https://www.facebook.com/24sevenhealthcare/">24sevenhealthcare</a>
+							</blockquote>
+				</div>
 			</div>
 			<!-- End Contact, Map ... -->
 		</div>

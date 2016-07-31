@@ -6056,9 +6056,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow: hidden;
+  height: 286px; }
   .section-7 .box {
-    background-color: red;
     width: 366px; }
   .section-7 #mailing-sub {
     background: none;
