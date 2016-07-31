@@ -6083,4 +6083,23 @@ header {
   .section-7 #map {
     border: solid 1px #ddd; }
 
+.section-8 {
+  background-color: #fff; }
+  .section-8 .slide-layer {
+    height: 130px;
+    overflow: hidden;
+    padding: 20px 0; }
+    .section-8 .slide-layer img {
+      height: 90px; }
+
+footer {
+  background-color: #ccc; }
+  footer .wrapper {
+    background: none;
+    padding: 20px 0; }
+    footer .wrapper .mid-img {
+      text-align: center; }
+    footer .wrapper img {
+      width: 54px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -331,14 +331,12 @@
 		    <script>
 		      // In the following example, markers appear when the user clicks on the map.
 		      // Each marker is labeled with a single alphabetical character.
-		      var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		      var labelIndex = 0;
 
 		      function initialize() {
-		        var bangalore = { lat: 11.547918, lng: 104.868550 };
+		        var v_place = { lat: 11.561034, lng: 104.920935 };
 		        var map = new google.maps.Map(document.getElementById('map'), {
-		          zoom: 16,
-		          center: bangalore,
+		          zoom: 18,
+		          center: v_place,
 		           mapTypeControl: false,
 		           streetViewControl: false
 		        });
@@ -349,7 +347,7 @@
 		        });
 
 		        // Add a marker at the center of the map.
-		        addMarker(bangalore, map);
+		        addMarker(v_place, map, 'abc');
 		      }
 
 		      // Adds a marker to the map.
@@ -358,7 +356,8 @@
 		        // from the array of alphabetical characters.
 		        var marker = new google.maps.Marker({
 		          position: location,
-		          label: labels[labelIndex++ % labels.length],
+		          //label: labels[labelIndex++ % labels.length],
+		          title: 'IDC-International Dental Clinic',
 		          map: map
 		        });
 		      }
@@ -370,6 +369,7 @@
 							data-href="https://www.facebook.com/24sevenhealthcare/" 
 							data-tabs="timeline"
 							data-width="366"
+							data-height="285"
 							data-small-header="true" 
 							data-adapt-container-width="true" 
 							data-hide-cover="false" data-show-facepile="true">
@@ -380,8 +380,34 @@
 			</div>
 			<!-- End Contact, Map ... -->
 		</div>
+		
+		<div class="section-8">
+			<div class="wrapper slide-layer">
+				<!-- <div id="wb_Text2">
+					<div class="widget-title"  style="margin-top: 15px;">Our Manugactures</div>
+				</div> -->
+				<div id="SlideShow2" class="slide-show">
+					<img class="image" src="/assets/images/partners/partner-1.jpg" alt="1" title="1">
+					<img class="image" src="/assets/images/partners/partner-2.jpg" style="display:none;" alt="2" title="2">
+					<img class="image" src="/assets/images/partners/partner-3.jpg" style="display:none;" alt="3" title="3">
+					<img class="image" src="/assets/images/partners/partner-4.jpg" style="display:none;" alt="4" title="4">
+					<img class="image" src="/assets/images/partners/partner-5.jpg" style="display:none;" alt="5" title="5">
+					<img class="image" src="/assets/images/partners/partner-6.jpg" style="display:none;" alt="6" title="6">
+					<img class="image" src="/assets/images/partners/partner-7.jpg" style="display:none;" alt="7" title="7">
+				</div>
+			</div>
+		</div>
 
 		<!-- Page footer -->
+		<footer>
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-md-5">Copyright © 2016, 24 SEVENHEALTHCARE .Co LTD. Address: No 193, St. 208, Sangkat Boeung Raing, Khan Daun Penh, Phnom Penh</div>
+					<div class="col-md-2 mid-img"><img src="/assets/images/24-footer.png" alt="SevenHC"></div>
+					<div class="col-md-5">24 Seven Healthcare was fond in May, 2015 by a group of dentists in south East Asia. 24 Seven Healthcare provides more significant key products for dental business, by importing oversea brands directly, distributing to serve all Cambodian dental practitioners all over nationwide.</div>
+				</div>
+			</div>
+		</footer>
 		<!-- End page footer -->
 	</div>
 	<!-- scripts -->
@@ -487,6 +513,15 @@
 			}
 
 			$grid.isotope({ filter: '.visible' });
+		});
+	</script>
+
+	<script src="{{ asset('assets/js/wb.slideshow.min.js') }}"></script>
+	<script src="{{ asset('assets/js/wb.conveyerbelt.min.js') }}"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("#SlideShow2").conveyerbelt({speed: 2, spacing: 30});
 		});
 	</script>
 	<!-- end scripts -->
