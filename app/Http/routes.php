@@ -7,4 +7,9 @@
 // });
 
 Route::get('/', 'MainController@index');
-Route::get('index_old', 'MainController@index_old');
+
+
+Route::group(['prefix' => 'admin'], function(){
+	Route::get('/', 'Admin\AdminController@index');
+	Route::get('product/create', 'Admin\ProductController@create');
+});

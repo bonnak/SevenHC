@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>	
-		<title>Clinico - Responsive Medical and Health Template</title>
+		<title>24 Seven Health Care</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Hanuman" rel="stylesheet" type="text/css">
 		
@@ -65,9 +65,9 @@
 				</div>
 
 				<div id="social">
-					<a href="#"><img src="{{ asset('assets/images/socials/fb.png') }}"></a>
-					<a href="#"><img src="{{ asset('assets/images/socials/youtube.png') }}"></a>
-					<a href="#"><img src="{{ asset('assets/images/socials/instagram.png') }}"></a>
+					<a href="https://www.facebook.com/24sevenhealthcare/" target="_blank"><img src="{{ asset('assets/images/socials/fb.png') }}"></a>
+					<a href="https://twitter.com/sevenhealthcare/" target="_blank"><img src="{{ asset('assets/images/socials/twitter.png') }}"></a>
+					<a href="https://www.instagram.com/24sevenhealthcare/" target="_blank"><img src="{{ asset('assets/images/socials/instagram.png') }}"></a>
 					<a href="#"><img src="{{ asset('assets/images/socials/line.png') }}"></a>
 				</div>
 			</section>
