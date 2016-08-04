@@ -183,58 +183,7 @@
 			<!--/ slider -->
 			
 			<!-- Selected products -->
-			<div class="panel panel-default items-section">
-				<div class="panel-heading heading">Selected Products</div>
-				<div class="panel-body items">
-					<div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
-			      <div class="more">
-			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
-			      </div>
-			    </div>
-
-			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
-			      <div class="more">
-			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
-			      </div>
-			    </div>
-
-			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
-			      <div class="more">
-			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
-			      </div>
-			    </div>
-
-			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
-			      <div class="more">
-			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
-			      </div>
-			    </div>
-
-			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
-			      <div class="more">
-			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
-			      </div>
-			    </div>
-
-			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
-			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui beatae illum dolor sed, commodi placeat provident aliquid iste odit, laudantium hic. Quo harum magnam, esse nesciunt iste hic deserunt recusandae.</p>
-			      <div class="more">
-			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
-			      </div>
-			    </div>
-				</div>
-			</div>
+			@include('_partials.selected_products')
 			<!-- End selected products -->
 
 			<!-- Referal from doctors -->

@@ -10,4 +10,9 @@ class Product extends Model
 	{
 		return $this->hasMany(ProductPhoto::class);
 	}
+
+	public function photo_primary()
+	{
+		return $this->hasOne(ProductPhoto::class);//->where('primary', '=', 1);
+	}
 }
