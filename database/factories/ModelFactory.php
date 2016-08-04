@@ -23,6 +23,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Product::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
-        'description' => $faker->paragraph,
+        'description_en' => $faker->paragraph,
+        'description_kh' => $faker->paragraph,
+    ];
+});
+
+$factory->define(App\ProductPhoto::class, function (Faker\Generator $faker) {
+    return [
+        'product_id' => factory('App\Product')->create()->id,
+        'file_name' => $faker->imageUrl
     ];
 });
