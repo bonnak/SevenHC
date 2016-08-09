@@ -191,7 +191,9 @@
 				<div class="panel-heading heading">Referal from Doctors</div>
 				<div class="panel-body items">
 					<div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+						<div class="thumnail">
+				      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      </div>
 			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id magnam saepe quisquam minima facilis eaque, eligendi temporibus quae vero, natus pariatur, accusamus cupiditate est culpa sequi repellendus excepturi soluta.</p>
 			      <div class="more">
 			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
@@ -199,7 +201,9 @@
 			    </div>
 
 			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <div class="thumnail">
+				      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      </div>
 			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id magnam saepe quisquam minima facilis eaque, eligendi temporibus quae vero, natus pariatur, accusamus cupiditate est culpa sequi repellendus excepturi soluta.</p>
 			      <div class="more">
 			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>
@@ -207,7 +211,9 @@
 			    </div>
 
 			    <div class="item-content clearfix">
-			      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      <div class="thumnail">
+				      <img src="{{ asset('assets/images/thumbnails/content.jpg') }}" alt="...">
+			      </div>
 			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum id magnam saepe quisquam minima facilis eaque, eligendi temporibus quae vero, natus pariatur, accusamus cupiditate est culpa sequi repellendus excepturi soluta.</p>
 			      <div class="more">
 			      	<a href="#" class="btn-more"><i class="fa fa-arrow-right"></i></a>

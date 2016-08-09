@@ -11,18 +11,26 @@
 		background: none
 
 	.items
+		display: flex
+		flex-flow: row wrap
 
 		.item-content
+			display: flex
+			flex-flow: column nowrap
 			width: 340px
-			min-height: 200px
-			margin: 15px 28px 15px 0
-			float: left
+			margin: 15px 28px 40px 0
 
-			img
-				width: 90px
-				margin-right: 10px
-				margin-bottom: 10px
-				float: left
+			.thumnail
+				max-height: 200px
+				overflow: hidden
+				margin-bottom: 14px
+
+				img
+					width: 100%
+
+			p
+				flex: 1
+				margin-bottom: 14px
 
 			.more
 				text-align: right

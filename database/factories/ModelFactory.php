@@ -23,14 +23,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Product::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
-        'description_en' => $faker->paragraph,
-        'description_kh' => $faker->paragraph,
+        'description_en' => $faker->paragraph(100),
+        'description_kh' => $faker->paragraph(100),
     ];
 });
 
 $factory->define(App\ProductPhoto::class, function (Faker\Generator $faker) {
     return [
-        'product_id' => factory('App\Product')->create()->id,
-        'file_name' => $faker->imageUrl
+        'product_id' => function(){ return factory('App\Product')->create()->id; } ,
+        'file_name' => $faker->image('/var/www/SevenHC/public/assets/images/products', 90, 90, null, false)
     ];
 });
